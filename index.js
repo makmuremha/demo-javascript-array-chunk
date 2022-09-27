@@ -3,7 +3,7 @@ try {
   // function to generate array
   function generateChunkArray(lowNumber, highNumber) {
     if (lowNumber > highNumber) {
-      throw Error("Minimum number is greater than maximum number");
+      throw newError("Minimum number is greater than maximum number");
     }
 
     if (typeof lowNumber === "number" && typeof highNumber === "number") {
@@ -12,8 +12,7 @@ try {
       for (let index = lowNumber; index <= highNumber; index++) {
         dataArray.push(index);
       }
-      console.log("data array : ");
-      console.log(dataArray);
+      console.log("data array : " + dataArray);
 
       // set chunk size & any variables
       let chunkSize = 5;
@@ -30,7 +29,7 @@ try {
       }
 
       const dataJson = {
-        titel: "A Simple Array Chunk",
+        titel: "a simple program array chunk",
         data: objectArray,
       };
       console.log(JSON.stringify(dataJson));
