@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo Javascript</title>
-</head>
-<body>
-    <h1>Example Javascript Try Catch & Array </h1>
-    <h4>Check your console for result</h4>
-    <script src="index.js"></script>
-</body>
+  </head>
+  <body>
+    <h1>Example Javascript Generate Chunk </h1>
+    <h4>Entrer a low number & high number</h4>
+    <form id="array-chunk-form">
+      <p>
+        <label for="">Chunk Size : </label>
+        <input type="number" id="chunk-size" />
+      </p>
+      <p>
+        <label for="">Low number : </label>
+        <input type="number" id="low-number" />
+      </p>
+      <p>
+        <label for="">High number :</label>
+        <input type="number" id="high-number" />
+      </p>
+      <p><input type="submit" value="Proccess" /></p>
+    </form>
+    <div id="result-array"></div>
+    <p>
+        <h3> Result JSON after chunked</h3>
+        <div id="result-json"></div>
+    </p>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
